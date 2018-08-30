@@ -1,0 +1,20 @@
+class Person //人类{
+public Person(String n,int a) //构造方法
+
+{
+ name = n; age = a;
+}
+ private string name;
+ private int age;
+}
+static void main(String[] args){
+Person p = new Person("张三",14);//这就是作用
+}
+
+
+
+PS：new一个对象的时候要用到构造函数,
+例如Hello hello = new Hello();这时调用的是Hello的无参数构造方法;
+Hello hello = new Hello("hi");这个是调用Hello有参数构造方法,
+在JAVA中如果不写构造方法的话,会默认加上一个无参数的构造方法,但是如果已经有了一个有参数的构造方法,那么无参数的构造方法就不会默认被加上.
+如果Hello类中已经有了一个有参数的构造方法,这时再使用 Hello hello = new Hello();来创建对象的时候就会出错,这就是为什么书上要强调写了有参数的构造方法就最好加一个无参数的构造方法.
