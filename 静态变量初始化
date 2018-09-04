@@ -1,0 +1,21 @@
+public class Helloworld
+{
+static int var1;
+static int var2;
+public static void display() // 显示属性值方法
+{
+System.out.println("var1="+var1);
+System.out.println("var2="+var2);
+} // 显示方法结束
+static // 初始化静态变量
+{
+System.out.println(" 现在对变量进行初始化...");
+var1=128; // 为变量var1 赋初值
+var2=var1*8; // 为变量var2 赋初值
+System.out.println(" 变量的初始化完成!!!");
+} // 初始化器结束
+public static void main(String [] args) // 主方法
+{
+display(); // 显示属性值
+} // 主方法结束
+}
