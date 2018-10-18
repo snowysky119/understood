@@ -1,0 +1,35 @@
+public class Test {
+public static void main(String[] args) {
+int k=2;
+int m=2;
+int len=5;
+int child[5];
+int temp=0;
+int thisone;
+
+for(int i=0;i<len;i++)
+{
+ child[i]=i+1;
+ System.out.println(child[i]);
+}
+
+while(temp!=1)
+{
+ for(int i=0;i<2;i++)//此处循环为死循环
+{
+ thisone=child[m+i];
+}
+for(int i=0;i<temp;i++)
+{
+ if(child[i]==thisone)
+ {
+  child[i]=child[i+1];
+  --temp;
+ }
+}
+}
+System.out.println(child[0]);
+}
+}
+
+
